@@ -13,7 +13,7 @@ int main()
 	ct2.takeDamage(ct1.getAttackDamage());
 	ct2.highFivesGuys();
 
-    std::cout << "Name= " << ct2.getName() << " Attack P: "<<ct2.getAttackDamage() 
+    std::cout << "Name= " << ct2.getName() << " Attack P: "<<ct2.getAttackDamage()
         << " Energy P: "<< ct2.getEnergyPoints() << " Hit P:" << ct2.getHitPoints() << std::endl;
 
 }

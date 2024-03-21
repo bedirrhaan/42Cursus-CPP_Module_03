@@ -30,7 +30,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& copy)
         this->energyPoints = copy.getEnergyPoints();
         this->attackDamage = copy.getAttackDamage();
     }
-    return (*this);    
+    return (*this);
 }
 
 // Destructor
@@ -89,7 +89,7 @@ void    ClapTrap::attack(const std::string& target)
         return;
     }
     std::cout << "ClapTrap " << getName() << " attacks " << target << " , causing " << getAttackDamage() << " points of damage!" << std::endl;
-    
+
     setEnergyPoints(getEnergyPoints() - 1);
 }
 
@@ -101,16 +101,15 @@ void    ClapTrap::takeDamage(unsigned int amount)
         setHitPoints(getHitPoints() - amount);
         if (getHitPoints() <= 0)
             std::cout << getName() << " is dead" << std::endl;
-    }   
+    }
 }
 
 void    ClapTrap::beRepaired(unsigned int amount)
 {
     if (getHitPoints() and getEnergyPoints())
-    {   
+    {
         std::cout << "ClapTrap" << getName() << " get health " << amount << " points!" << std::endl;
         setHitPoints(getHitPoints() + amount);
         setEnergyPoints(getEnergyPoints() - 1);
     }
 }
-

@@ -13,7 +13,7 @@ int main()
 	DiamondTrap c(a);
 	std::cout << std::endl;
 
-    std::cout << "Name= " << a.getName() << " Attack P: "<<a.getAttackDamage() 
+    std::cout << "Name= " << a.getName() << " Attack P: "<<a.getAttackDamage()
         << " Energy P: "<< a.getEnergyPoints() << " Hit P:" << a.getHitPoints() << std::endl << std::endl;
 	a.highFivesGuys();
 	a.guardGate();

@@ -16,7 +16,7 @@ int main()
 
 	ct2.ClapTrap::attack("Marvin");
 
-	std::cout << "Name = " << ct2.getName() << " Attack P : "<< ct2.getAttackDamage() 
+	std::cout << "Name = " << ct2.getName() << " Attack P : "<< ct2.getAttackDamage()
     	<< " Energy P : "<< ct2.getEnergyPoints() << " Hit P :" << ct2.getHitPoints() << std::endl;
 
 }

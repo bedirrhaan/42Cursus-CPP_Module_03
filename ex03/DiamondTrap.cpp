@@ -17,7 +17,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap& copy) : ClapTrap(copy), FragTrap(cop
     *this = copy;
 }
 
-DiamondTrap&    DiamondTrap::operator=(const DiamondTrap& copy) 
+DiamondTrap&    DiamondTrap::operator=(const DiamondTrap& copy)
 {
     if (this != &copy)
     {

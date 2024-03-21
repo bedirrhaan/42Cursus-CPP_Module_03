@@ -1,10 +1,10 @@
 #include "ClapTrap.hpp"
 
-int main() 
+int main()
 {
 
     ClapTrap claptrap1("Bedirhan");
-    claptrap1.setAttackDamage(25); 
+    claptrap1.setAttackDamage(25);
 
     ClapTrap claptrap2(claptrap1);
 
